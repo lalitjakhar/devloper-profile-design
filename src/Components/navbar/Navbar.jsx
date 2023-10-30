@@ -27,7 +27,7 @@ const Navbar = () => {
       <CssBaseline />
       <AppBar position="sticky" sx={{ backgroundColor: "#25b900" }}>
         <Container>
-          <Toolbar className="border-bottom">
+          <Toolbar>
             <Typography
               variant="h6"
               sx={{
