@@ -9,7 +9,7 @@ const Details = () => {
         <div class="container">
           <div class="row">
             <div class="col mx-auto text-center">
-              <div class="card card-blog card-plain" style={{backgroundColor:'#aeb900'}}>
+              <div class="card card-blog card-plain">
                 <div class="card-header p-0 position-relative z-index-2">
                   <a class="d-block">
                     <img src={Detailsimage} alt="" class="w-100" />

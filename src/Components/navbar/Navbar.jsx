@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <>
       <CssBaseline />
-      <AppBar position="sticky" sx={{ backgroundColor: "#25b900" }}>
+      <AppBar position="sticky" sx={{ backgroundColor: "#000000" }}>
         <Container>
           <Toolbar>
             <Typography

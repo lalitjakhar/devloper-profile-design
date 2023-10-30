@@ -11,7 +11,7 @@ const Footer = () => {
     <>
       <footer
         className="footer py-5 mt-5 "
-        style={{ backgroundColor: "#25b900" }}
+        style={{ backgroundColor: "#000000" , color:'#fff'}}
       >
         <Container>
           <div className="row">
@@ -22,19 +22,19 @@ const Footer = () => {
               <p className="mb-4 pb-2">
                 The next generation of design systems.
               </p>
-              <IconButton sx={{ marginRight: 1, color: "#000000" }}>
+              <IconButton sx={{ marginRight: 1, color: "#fff" }}>
                 <FacebookIcon />
               </IconButton>
-              <IconButton sx={{ marginRight: 1, color: "#000000" }}>
+              <IconButton sx={{ marginRight: 1, color: "#fff" }}>
                 <TwitterIcon />
               </IconButton>
-              <IconButton sx={{ marginRight: 1, color: "#000000" }}>
+              <IconButton sx={{ marginRight: 1, color: "#fff" }}>
                 <InstagramIcon />
               </IconButton>
-              <IconButton sx={{ marginRight: 1, color: "#000000" }}>
+              <IconButton sx={{ marginRight: 1, color: "#fff" }}>
                 <PinterestIcon />
               </IconButton>
-              <IconButton sx={{ marginRight: 1, color: "#000000" }}>
+              <IconButton sx={{ marginRight: 1, color: "#fff" }}>
                 <GitHubIcon />
               </IconButton>
             </div>
