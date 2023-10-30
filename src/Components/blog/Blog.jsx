@@ -8,7 +8,7 @@ const Blog = () => {
         <div class="container">
           <div class="row">
             <div class="col-lg-4 mb-lg-0 mb-4">
-              <div class="card" style={{ backgroundColor: "#25b900" }}>
+              <div class="card" style={{ backgroundColor: "#b90066" }}>
                 <div class="card-header p-0 m-3 mt-n4 position-relative z-index-2">
                   <img
                     src="https://images.unsplash.com/photo-1592489637182-8c172d6d7826?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2300&q=80"
@@ -38,7 +38,7 @@ const Blog = () => {
               </div>
             </div>
             <div class="col-lg-4 mb-lg-0 mb-4">
-              <div class="card" style={{ backgroundColor: "#25b900" }}>
+              <div class="card" style={{ backgroundColor: "#ffffff" }}>
                 <div class="card-header p-0 m-3 mt-n4 position-relative z-index-2">
                   <a class="d-block blur-shadow-image">
                     <img
@@ -70,7 +70,7 @@ const Blog = () => {
               </div>
             </div>
             <div class="col-lg-4 mb-lg-0 mb-4">
-              <div class="card" style={{ backgroundColor: "#25b900" }}>
+              <div class="card" style={{ backgroundColor: "#b90066" }}>
                 <div class="card-header p-0 m-3 mt-n4 position-relative z-index-2">
                   <a class="d-block blur-shadow-image">
                     <img
