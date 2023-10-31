@@ -1,18 +1,13 @@
 import "./App.css";
-import Blog from "./Components/blog/Blog";
-import Details from "./Components/details/Details";
-import Footer from "./Components/footer/Footer";
-import Header from "./Components/header/Header";
-import Navbar from "./Components/navbar/Navbar";
+import { BrowserRouter } from "react-router-dom";
+import Routing from "./Components/routes/Routing";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Header />
-      <Blog />
-      <Details />
-      <Footer />
+      <BrowserRouter>
+        <Routing />
+      </BrowserRouter>
     </>
   );
 }

@@ -12,6 +12,7 @@ import {
   MenuItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -21,6 +22,7 @@ const Navbar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+  const navigate = useNavigate();
 
   return (
     <>
@@ -66,7 +68,7 @@ const Navbar = () => {
                   <Button color="inherit">Services</Button>
                 </MenuItem>
                 <MenuItem sx={{ backgroundColor: "#25b900" }}>
-                  <Button color="inherit">Contact</Button>
+                  <Button color="inherit" onClick={() => navigate("/login")}>Contact</Button>
                 </MenuItem>
               </Menu>
             </Box>
