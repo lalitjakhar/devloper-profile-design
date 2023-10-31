@@ -12,7 +12,7 @@ import {
   MenuItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -68,7 +68,7 @@ const Navbar = () => {
                   <Button color="inherit">Services</Button>
                 </MenuItem>
                 <MenuItem sx={{ backgroundColor: "#25b900" }}>
-                  <Button color="inherit" onClick={() => navigate("/login")}>Contact</Button>
+                  <Button color="inherit">Login</Button>
                 </MenuItem>
               </Menu>
             </Box>
@@ -84,10 +84,18 @@ const Navbar = () => {
                 gap: 3,
               }}
             >
-              <Button color="inherit">Home</Button>
-              <Button color="inherit">About</Button>
-              <Button color="inherit">Services</Button>
-              <Button color="inherit">Contact</Button>
+              <Button color="inherit" onClick={() => navigate("/header")}>
+                Home
+              </Button>
+              <Button color="inherit" onClick={() => navigate("/blog")}>
+                About
+              </Button>
+              <Button color="inherit" onClick={() => navigate("/details")}>
+                Services
+              </Button>
+              <Button color="inherit" onClick={() => navigate("/login")}>
+                Login
+              </Button>
             </Box>
           </Toolbar>
         </Container>
