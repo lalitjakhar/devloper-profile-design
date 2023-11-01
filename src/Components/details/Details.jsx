@@ -6,18 +6,18 @@ import "../details/Details.css";
 const Details = () => {
   return (
     <>
-      <section class="py-5 bg-gray-100">
+      <section className="py-5 bg-gray-100">
         <Container>
-          <div class="row">
-            <div class="col mx-auto text-center">
-              <div class="card card-blog card-plain">
-                <div class="card-header p-0 position-relative z-index-2">
-                  <a class="d-block">
-                    <img src={Detailsimage} alt="" class="w-100 h-50" />
+          <div className="row">
+            <div className="col mx-auto text-center">
+              <div className="card card-blog card-plain">
+                <div className="card-header p-0 position-relative z-index-2">
+                  <a className="d-block">
+                    <img src={Detailsimage} alt="" className="w-100 h-50" />
                   </a>
                 </div>
-                <div class="card-body px-0 pt-4 details_content_effect">
-                  <p class="text-warning text-gradient font-weight-bold text-sm text-uppercase">
+                <div className="card-body px-0 pt-4 details_content_effect">
+                  <p className="text-warning text-gradient font-weight-bold text-sm text-uppercase">
                     Enterprise
                   </p>
                   <h4>Siri brings hands-free TV to more devices</h4>
