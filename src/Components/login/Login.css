@@ -38,13 +38,11 @@ input:hover {
 }
 
 button[type="submit"] {
-  width: 48%;
-  display: inline-block;
+  width: 20%;
 }
 
 #save {
-  margin-left: 1rem;
-  width: 48%;
+  width: 20%;
 }
 
 select {
@@ -59,7 +57,7 @@ select {
 select:focus,
 input:focus,
 textarea:focus {
-  outline: #349bab solid 1px;
+  outline: #02790a solid 2px;
 }
 
 textarea {

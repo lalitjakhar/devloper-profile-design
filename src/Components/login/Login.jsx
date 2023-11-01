@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../login/Login.css";
-import { Button, Container } from "@mui/material";
+import { Box, Button, Container } from "@mui/material";
 
 const Login = () => {
   const formId = "save-later-form";
@@ -64,7 +64,7 @@ const Login = () => {
 
   return (
     <>
-      <Container sx={{marginBlock:'2rem'}}>
+      <Container sx={{ marginBlock: "2rem" }}>
         <form id="save-later-form">
           <label htmlFor="full-name">Full Name</label>
           <input type="text" name="full-name" id="full-name" />
@@ -89,12 +89,32 @@ const Login = () => {
             id="description"
             placeholder="Describe yourself in 50 words"
           ></textarea>
-          <Button variant="contained" color="success" type="submit" id="submit">
-            SUBMIT
-          </Button>
-          <Button variant="contained" color="secondary" type="button" id="save">
-            SAVE
-          </Button>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Button
+              variant="contained"
+              color="success"
+              sx={{ mr: 2, mb: 2 }}
+              type="submit"
+              id="submit"
+            >
+              SUBMIT
+            </Button>
+            <Button
+              type="button"
+              variant="contained"
+              color="secondary"
+              sx={{ mr: 2, mb: 2 }}
+              id="save"
+            >
+              SAVE
+            </Button>
+          </Box>
         </form>
       </Container>
     </>
