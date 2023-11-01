@@ -1,18 +1,18 @@
 import React from "react";
 import Detailsimage from "../../Assets/details.avif";
-import { Button } from "@mui/material";
+import { Button, Container } from "@mui/material";
 
 const Details = () => {
   return (
     <>
       <section class="py-5 bg-gray-100">
-        <div class="container">
+        <Container>
           <div class="row">
             <div class="col mx-auto text-center">
               <div class="card card-blog card-plain">
                 <div class="card-header p-0 position-relative z-index-2">
                   <a class="d-block">
-                    <img src={Detailsimage} alt="" class="w-100" />
+                    <img src={Detailsimage} alt="" class="w-100 h-50" />
                   </a>
                 </div>
                 <div class="card-body px-0 pt-4">
@@ -34,7 +34,7 @@ const Details = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

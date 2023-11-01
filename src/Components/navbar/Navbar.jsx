@@ -84,7 +84,7 @@ const Navbar = () => {
                 gap: 3,
               }}
             >
-              <Button color="inherit" onClick={() => navigate("/header")}>
+              <Button color="inherit" onClick={() => navigate("/")}>
                 Home
               </Button>
               <Button color="inherit" onClick={() => navigate("/blog")}>

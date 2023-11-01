@@ -12,7 +12,7 @@ const Routing = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/header" element={<Header />}></Route>
+        <Route path="/" element={<Header />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/details" element={<Details />}></Route>

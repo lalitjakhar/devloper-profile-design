@@ -1,11 +1,11 @@
-import { Avatar } from "@mui/material";
+import { Avatar, Container } from "@mui/material";
 import React from "react";
 
 const Blog = () => {
   return (
     <>
-      <section class="py-6 bg-gray-100">
-        <div class="container">
+      <section class="my-4 bg-gray-100">
+        <Container>
           <div class="row">
             <div class="col-lg-4 mb-lg-0 mb-4">
               <div class="card">
@@ -102,7 +102,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );
