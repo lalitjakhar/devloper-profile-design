@@ -1,35 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import Header2 from "../../Assets/header2.avif";
+import Header1 from "../../Assets/header1.avif";
 import { Button, Container } from "@mui/material";
 
 const Header = () => {
+  const [isShowMore1, setIsShowMore1] = useState(false);
+  const [isShowMore2, setIsShowMore2] = useState(false);
+
+  const toggleReadMoreLess1 = () => {
+    setIsShowMore1(!isShowMore1);
+  };
+
+  const toggleReadMoreLess2 = () => {
+    setIsShowMore2(!isShowMore2);
+  };
+
   return (
     <>
       <header style={{ marginBlock: "3.8rem" }}>
         <div className="page-header min-vh-80">
           <Container>
             <div className="row">
-              <div className="col-lg-6 my-4">
+              <div className="col-lg-6 my-3">
                 <h1 className="mb-4 fw-bold">Desired Experiences</h1>
-                <p className="lead">
-                  The time is now for it to be okay to be great. For being a
-                  bright color. For standing out. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Voluptates porro eos quos
-                  voluptate id cumque. Eaque, quia. Voluptatum porro doloribus
-                  velit eligendi! Necessitatibus animi cupiditate ut similique
-                  aut provident maxime sint ducimus repudiandae in esse repellat
-                  facilis, vitae magnam quas, excepturi autem.
+                <p className="lead mb-0">
+                  Careers in programming, such as software engineering, web
+                  development , data science, are gaining popularity as
+                  technology advances. we can use the read more/read Tech
+                  specialists often encounter questions in interviews assessing
+                  their programming experience for developers. This section
+                  introduces to hiring manager and summarises your skills and
+                  experience. Data your programming experience here may
+                  encourage employers.
                 </p>
-                <div style={{ display: "flex", gap: "5px" }}>
+                {isShowMore1 && (
+                  <p className="lead mb-0">
+                    Tech specialists often encounter questions in interviews
+                    assessing their programming experience for the developers.
+                    This section introduces you to the hiring manager and
+                    summarises your skills and experience. Highlighting your
+                    programming experience here may encourage potential
+                    employers to read your entire CV.
+                  </p>
+                )}
+                <div
+                  style={{ marginTop: "1rem", display: "flex", gap: "1rem" }}
+                >
                   <Button variant="contained" color="warning">
                     Discover
                   </Button>
-                  <Button variant="contained" color="success">
-                    Read More
+                  <Button
+                    variant="contained"
+                    color="success"
+                    onClick={toggleReadMoreLess1}
+                  >
+                    {isShowMore1 ? "Read Less" : "Read More"}
                   </Button>
                 </div>
               </div>
-              <div className="col-lg-6 ps-5 pe-0">
+              <div className="col-lg-6">
                 <div className="row mt-3">
                   <img
                     className="w-100 d-flex justify-content-center"
@@ -37,6 +66,61 @@ const Header = () => {
                     alt="flower-2"
                     style={{ borderRadius: "2.5rem" }}
                   />
+                </div>
+              </div>
+            </div>
+            <hr className="horizontal dark mt-lg-5 mt-4 mb-sm-4 mb-1" />
+          </Container>
+        </div>
+      </header>
+      <header style={{ marginBlock: "3.8rem" }}>
+        <div className="page-header min-vh-80">
+          <Container>
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="row mt-3">
+                  <img
+                    className="w-100 d-flex justify-content-center"
+                    src={Header1}
+                    alt="flower-2"
+                    style={{ borderRadius: "2.5rem" }}
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 my-3">
+                <h1 className="mb-4 fw-bold">AI Experiences</h1>
+                <p className="lead mb-0">
+                  Artificial intelligence (AI) is the simulation of human
+                  intelligence by software-coded heuristics. Nowadays this code
+                  is prevalent in everything from cloud-based. The year 2022
+                  brought AI into the mainstream through widespread familiarity
+                  with applications of Generative Pre-Training Transformer.
+                  Limited memory AI can adapt to update itself based on new
+                  observations or data
+                </p>
+                {isShowMore2 && (
+                  <p className="lead mb-0">
+                    Tech specialists often encounter questions in interviews
+                    assessing their programming experience for the developers.
+                    This section introduces you to the hiring manager and
+                    summarises your skills and experience. Highlighting your
+                    programming experience here may encourage potential
+                    employers to read your entire CV.
+                  </p>
+                )}
+                <div
+                  style={{ marginTop: "1rem", display: "flex", gap: "1rem" }}
+                >
+                  <Button variant="contained" color="warning">
+                    Discover
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="success"
+                    onClick={toggleReadMoreLess2}
+                  >
+                    {isShowMore2 ? "Read Less" : "Read More"}
+                  </Button>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../login/Login.css";
-import { Button } from "@mui/material";
+import { Button, Container } from "@mui/material";
 
 const Login = () => {
   const formId = "save-later-form";
@@ -64,38 +64,39 @@ const Login = () => {
 
   return (
     <>
-      <div className="alert"></div>
-      <form id="save-later-form">
-        <label htmlFor="full-name">Full Name</label>
-        <input type="text" name="full-name" id="full-name" />
-        <label htmlFor="email">Email</label>
-        <input type="email" name="email" id="email" />
-        <label htmlFor="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone" maxLength="11" />
-        <label htmlFor="dob">Date Of Birth</label>
-        <input type="date" name="dob" id="dob" />
-        <label htmlFor="security">Security Question</label>
-        <select name="security" id="security" tabIndex="0">
-          <option value="">Select a question</option>
-          <option value="best-friend">What's your best friend's name?</option>
-          <option value="pet">What's the name of your first pet?</option>
-          <option value="spouse">Where did you meet your spouse?</option>
-        </select>
-        <label htmlFor="security-answer">Answer</label>
-        <input type="text" name="security-answer" id="security-answer" />
-        <label htmlFor="description">Description</label>
-        <textarea
-          name="description"
-          id="description"
-          placeholder="Describe yourself in 100 words"
-        ></textarea>
-        <Button variant="contained" color="success" type="submit" id="submit">
-          SUBMIT
-        </Button>
-        <Button variant="contained" color="secondary" type="button" id="save">
-          SAVE
-        </Button>
-      </form>
+      <Container sx={{marginBlock:'2rem'}}>
+        <form id="save-later-form">
+          <label htmlFor="full-name">Full Name</label>
+          <input type="text" name="full-name" id="full-name" />
+          <label htmlFor="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label htmlFor="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" maxLength="11" />
+          <label htmlFor="dob">Date Of Birth</label>
+          <input type="date" name="dob" id="dob" />
+          <label htmlFor="security">Security Question</label>
+          <select name="security" id="security" tabIndex="0">
+            <option value="">Select a question</option>
+            <option value="best-friend">What's your best friend's name?</option>
+            <option value="pet">What's the name of your first pet?</option>
+            <option value="spouse">Where did you meet your spouse?</option>
+          </select>
+          <label htmlFor="security-answer">Answer</label>
+          <input type="text" name="security-answer" id="security-answer" />
+          <label htmlFor="description">Description</label>
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Describe yourself in 50 words"
+          ></textarea>
+          <Button variant="contained" color="success" type="submit" id="submit">
+            SUBMIT
+          </Button>
+          <Button variant="contained" color="secondary" type="button" id="save">
+            SAVE
+          </Button>
+        </form>
+      </Container>
     </>
   );
 };

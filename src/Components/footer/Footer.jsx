@@ -11,7 +11,7 @@ const Footer = () => {
     <>
       <footer
         className="footer py-5 mt-5 "
-        style={{ backgroundColor: "#000000" , color:'#fff'}}
+        style={{ backgroundColor: "#000000", color: "#fff" }}
       >
         <Container>
           <div className="row">
@@ -28,13 +28,19 @@ const Footer = () => {
               <IconButton sx={{ marginRight: 1, color: "#fff" }}>
                 <TwitterIcon />
               </IconButton>
-              <IconButton sx={{ marginRight: 1, color: "#fff" }}>
+              <IconButton
+                href="https://instagram.com/lalit_choudhary25"
+                sx={{ marginRight: 1, color: "#fff" }}
+              >
                 <InstagramIcon />
               </IconButton>
               <IconButton sx={{ marginRight: 1, color: "#fff" }}>
                 <PinterestIcon />
               </IconButton>
-              <IconButton sx={{ marginRight: 1, color: "#fff" }}>
+              <IconButton
+                href="https://github.com/lalitjakhar"
+                sx={{ marginRight: 1, color: "#fff" }}
+              >
                 <GitHubIcon />
               </IconButton>
             </div>

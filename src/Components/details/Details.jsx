@@ -1,6 +1,7 @@
 import React from "react";
 import Detailsimage from "../../Assets/details.avif";
 import { Button, Container } from "@mui/material";
+import "../details/Details.css";
 
 const Details = () => {
   return (
@@ -15,7 +16,7 @@ const Details = () => {
                     <img src={Detailsimage} alt="" class="w-100 h-50" />
                   </a>
                 </div>
-                <div class="card-body px-0 pt-4">
+                <div class="card-body px-0 pt-4 details_content_effect">
                   <p class="text-warning text-gradient font-weight-bold text-sm text-uppercase">
                     Enterprise
                   </p>

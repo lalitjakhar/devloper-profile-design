@@ -1,0 +1,4 @@
+.card_container_effects:hover{
+    background-color: #f0cd1c;
+    filter: brightness(0.7);
+}

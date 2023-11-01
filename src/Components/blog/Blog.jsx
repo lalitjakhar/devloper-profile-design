@@ -1,5 +1,6 @@
 import { Avatar, Container } from "@mui/material";
 import React from "react";
+import "../blog/Blog.css";
 
 const Blog = () => {
   return (
@@ -8,7 +9,7 @@ const Blog = () => {
         <Container>
           <div class="row">
             <div class="col-lg-4 mb-lg-0 mb-4">
-              <div class="card">
+              <div class="card card_container_effects">
                 <div class="card-header p-0 m-3 mt-n4 position-relative z-index-2">
                   <img
                     src="https://images.unsplash.com/photo-1592489637182-8c172d6d7826?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2300&q=80"
@@ -17,7 +18,7 @@ const Blog = () => {
                   />
                 </div>
                 <div class="card-body pt-2">
-                  <span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">
+                  <span class="text-gradient text-info text-uppercase text-xs font-weight-bold my-2">
                     House
                   </span>
                   <h4>Shared Coworking</h4>
@@ -38,7 +39,7 @@ const Blog = () => {
               </div>
             </div>
             <div class="col-lg-4 mb-lg-0 mb-4">
-              <div class="card">
+              <div class="card card_container_effects">
                 <div class="card-header p-0 m-3 mt-n4 position-relative z-index-2">
                   <a class="d-block blur-shadow-image">
                     <img
@@ -70,7 +71,7 @@ const Blog = () => {
               </div>
             </div>
             <div class="col-lg-4 mb-lg-0 mb-4">
-              <div class="card">
+              <div class="card card_container_effects">
                 <div class="card-header p-0 m-3 mt-n4 position-relative z-index-2">
                   <a class="d-block blur-shadow-image">
                     <img
@@ -81,7 +82,7 @@ const Blog = () => {
                   </a>
                 </div>
                 <div class="card-body pt-2">
-                  <span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">
+                  <span class="text-gradient text-info text-uppercase text-xs font-weight-bold my-2">
                     Hub
                   </span>
                   <h4>Coworking Office</h4>

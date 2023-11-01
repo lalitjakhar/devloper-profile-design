@@ -1,16 +1,6 @@
 import React from "react";
-import {
-  AppBar,
-  Box,
-  Button,
-  Container,
-  CssBaseline,
-  IconButton,
-  Toolbar,
-  Typography,
-  Menu,
-  MenuItem,
-} from "@mui/material";
+import { AppBar, Box, Button, Container, IconButton } from "@mui/material";
+import { Toolbar, Typography, Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
 
@@ -26,7 +16,6 @@ const Navbar = () => {
 
   return (
     <>
-      <CssBaseline />
       <AppBar position="sticky" sx={{ backgroundColor: "#000000" }}>
         <Container>
           <Toolbar>
@@ -59,16 +48,24 @@ const Navbar = () => {
                 }}
               >
                 <MenuItem sx={{ backgroundColor: "#25b900" }}>
-                  <Button color="inherit">Home</Button>
+                  <Button color="inherit" onClick={() => navigate("/")}>
+                    Home
+                  </Button>
                 </MenuItem>
                 <MenuItem sx={{ backgroundColor: "#25b900" }}>
-                  <Button color="inherit">About</Button>
+                  <Button color="inherit" onClick={() => navigate("/blog")}>
+                    About
+                  </Button>
                 </MenuItem>
                 <MenuItem sx={{ backgroundColor: "#25b900" }}>
-                  <Button color="inherit">Services</Button>
+                  <Button color="inherit" onClick={() => navigate("/details")}>
+                    Services
+                  </Button>
                 </MenuItem>
                 <MenuItem sx={{ backgroundColor: "#25b900" }}>
-                  <Button color="inherit">Login</Button>
+                  <Button color="inherit" onClick={() => navigate("/login")}>
+                    Login
+                  </Button>
                 </MenuItem>
               </Menu>
             </Box>
