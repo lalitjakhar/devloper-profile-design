@@ -24,6 +24,9 @@ const Navbar = () => {
               sx={{
                 textTransform: "uppercase",
                 fontSize: "1.7rem",
+                "@media (max-width: 380px)": {
+                  fontSize: "1.1  rem",
+                },
                 fontWeight: "600",
               }}
             >
@@ -47,22 +50,22 @@ const Navbar = () => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                <MenuItem sx={{ backgroundColor: "#25b900" }}>
+                <MenuItem>
                   <Button color="inherit" onClick={() => navigate("/")}>
                     Home
                   </Button>
                 </MenuItem>
-                <MenuItem sx={{ backgroundColor: "#25b900" }}>
+                <MenuItem>
                   <Button color="inherit" onClick={() => navigate("/blog")}>
                     About
                   </Button>
                 </MenuItem>
-                <MenuItem sx={{ backgroundColor: "#25b900" }}>
-                  <Button color="inherit" onClick={() => navigate("/details")}>
+                <MenuItem>
+                  <Button color="inherit" onClick={() => navigate("/services")}>
                     Services
                   </Button>
                 </MenuItem>
-                <MenuItem sx={{ backgroundColor: "#25b900" }}>
+                <MenuItem>
                   <Button color="inherit" onClick={() => navigate("/login")}>
                     Login
                   </Button>
@@ -87,7 +90,7 @@ const Navbar = () => {
               <Button color="inherit" onClick={() => navigate("/blog")}>
                 About
               </Button>
-              <Button color="inherit" onClick={() => navigate("/details")}>
+              <Button color="inherit" onClick={() => navigate("/services")}>
                 Services
               </Button>
               <Button color="inherit" onClick={() => navigate("/login")}>

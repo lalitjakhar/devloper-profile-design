@@ -5,7 +5,7 @@ import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import Login from "../login/Login";
 import Blog from "../blog/Blog";
-import Details from "../details/Details";
+import Services from "../services/Services";
 
 const Routing = () => {
   return (
@@ -15,7 +15,7 @@ const Routing = () => {
         <Route path="/" element={<Header />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
-        <Route path="/details" element={<Details />}></Route>
+        <Route path="/services" element={<Services />}></Route>
       </Routes>
       <Footer />
     </>

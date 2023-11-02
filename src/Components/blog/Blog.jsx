@@ -1,4 +1,5 @@
 import { Avatar, Container } from "@mui/material";
+import Details from "../details/Details"
 import React from "react";
 import "../blog/Blog.css";
 
@@ -105,6 +106,7 @@ const Blog = () => {
           </div>
         </Container>
       </section>
+      <Details />
     </>
   );
 };
