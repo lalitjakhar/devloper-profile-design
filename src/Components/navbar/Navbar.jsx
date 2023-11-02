@@ -30,7 +30,7 @@ const Navbar = () => {
                 fontWeight: "600",
               }}
             >
-              Designer Profile
+              Developer Profile
             </Typography>
             <Box
               sx={{

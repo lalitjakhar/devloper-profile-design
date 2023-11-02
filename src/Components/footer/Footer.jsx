@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-3 mb-5 mb-lg-0">
               <h4 className="text-uppercase mb-2  fw-bold">
-                Material UI Design
+                Frontend Developer Profile
               </h4>
               <p className="mb-4 pb-2">
                 The next generation of design systems.
