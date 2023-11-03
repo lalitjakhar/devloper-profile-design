@@ -1,188 +1,195 @@
-import React from "react";
-import { Container, Grid, Typography } from "@mui/material";
-import { Box } from "@mui/material";
-import { Stack } from "@mui/material";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import { Button, CardActions } from "@mui/material";
-import CardPic from "../../Assets/Cardpic.avif";
-import Rating from "@mui/material/Rating";
+import React, { useState } from "react";
+import Header2 from "../../Assets/header2.avif";
+import Header1 from "../../Assets/header1.avif";
+import Header3 from "../../Assets/header3.avif";
+import { Button, Container } from "@mui/material";
 
-export default function Services() {
-  const [value, setValue] = React.useState("2");
+const Services = () => {
+  const [isShowMore1, setIsShowMore1] = useState(false);
+  const [isShowMore2, setIsShowMore2] = useState(false);
+  const [isShowMore3, setIsShowMore3] = useState(false);
+
+  const toggleReadMoreLess1 = () => {
+    setIsShowMore1(!isShowMore1);
+  };
+
+  const toggleReadMoreLess2 = () => {
+    setIsShowMore2(!isShowMore2);
+  };
+
+  const toggleReadMoreLess3 = () => {
+    setIsShowMore3(!isShowMore3);
+  };
+
   return (
     <>
-      <Container>
-        <Box sx={{ marginBlock: "2rem" }}>
-          <Grid
-            container
-            lg={12}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              background: "linear-gradient(90deg, red 50%, black 50%)",
-            }}
-          >
-            <Grid
-              container
-              direction="column"
-              item
-              xs={12}
-              sx={{
-                justifyContent: "center",
-                alignItems: "center",
-                "& h4": {
-                  background: "linear-gradient(90deg, black 50%, white 50%)",
-                  backgroundClip: "text",
-                  color: "transparent",
-                  paddingBlock: "2rem",
-                },
-              }}
-            >
-              <Typography variant="h4">DEVELOPER's-PROFILE</Typography>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sx={{
-                padding: "10px 100px 100px 100px",
-              }}
-            >
-              <Box
-                container
-                sx={{
-                  backgroundColor: "#7be045",
-                }}
-              >
-                <Box sx={{ padding: "50px" }}>
-                  <Stack
-                    sx={{ justifyContent: "center", alignItems: "center" }}
+      <header style={{ marginBlock: "3.8rem" }}>
+        <div className="page-header min-vh-80">
+          <Container>
+            <div className="row">
+              <div className="col-lg-6 my-3">
+                <h1 className="mb-4 fw-bold">Desired Experiences</h1>
+                <p className="lead mb-0">
+                  Careers in programming, such as software engineering, web
+                  development , data science, are gaining popularity as
+                  technology advances. we can use the read more/read Tech
+                  specialists often encounter questions in interviews assessing
+                  their programming experience for developers. This section
+                  introduces to hiring manager and summarises your skills and
+                  experience. Data your programming experience here may
+                  encourage employers.
+                </p>
+                {isShowMore1 && (
+                  <p className="lead mb-0">
+                    Tech specialists often encounter questions in interviews
+                    assessing their programming experience for the developers.
+                    This section introduces you to the hiring manager and
+                    summarises your skills and experience. Highlighting your
+                    programming experience here may encourage potential
+                    employers to read your entire CV.
+                  </p>
+                )}
+                <div
+                  style={{ marginTop: "1rem", display: "flex", gap: "1rem" }}
+                >
+                  <Button variant="contained" color="warning">
+                    Discover
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="success"
+                    onClick={toggleReadMoreLess1}
                   >
-                    <CardMedia
-                      component="img"
-                      image={CardPic}
-                      alt="green lady profile"
-                      sx={{
-                        borderRadius: "50%",
-                        width: "150px",
-                        height: "150px",
-                        display: "flex",
-                        justifyContent: "center",
-                      }}
-                    />
-                  </Stack>
-                  <Stack
-                    sx={{ justifyContent: "center", alignItems: "center" }}
+                    {isShowMore1 ? "Read Less" : "Read More"}
+                  </Button>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="row mt-3">
+                  <img
+                    className="w-100 d-flex justify-content-center"
+                    src={Header2}
+                    alt="flower-2"
+                    style={{ borderRadius: "2.5rem" }}
+                  />
+                </div>
+              </div>
+            </div>
+            <hr className="horizontal dark mt-lg-5 mt-4 mb-sm-4 mb-1" />
+          </Container>
+        </div>
+      </header>
+      <header style={{ marginBlock: "3.8rem" }}>
+        <div className="page-header min-vh-80">
+          <Container>
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="row mt-3">
+                  <img
+                    className="w-100 d-flex justify-content-center"
+                    src={Header1}
+                    alt="flower-2"
+                    style={{ borderRadius: "2.5rem" }}
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 my-3">
+                <h1 className="mb-4 fw-bold">AI Experiences</h1>
+                <p className="lead mb-0">
+                  Artificial intelligence (AI) is the simulation of human
+                  intelligence by software-coded heuristics. Nowadays this code
+                  is prevalent in everything from cloud-based. The year 2022
+                  brought AI into the mainstream through widespread familiarity
+                  with applications of Generative Pre-Training Transformer.
+                  Limited memory AI can adapt to update itself based on new
+                  observations or data
+                </p>
+                {isShowMore2 && (
+                  <p className="lead mb-0">
+                    Tech specialists often encounter questions in interviews
+                    assessing their programming experience for the developers.
+                    This section introduces you to the hiring manager and
+                    summarises your skills and experience. Highlighting your
+                    programming experience here may encourage potential
+                    employers to read your entire CV.
+                  </p>
+                )}
+                <div
+                  style={{ marginTop: "1rem", display: "flex", gap: "1rem" }}
+                >
+                  <Button variant="contained" color="warning">
+                    Discover
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="success"
+                    onClick={toggleReadMoreLess2}
                   >
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant="h3"
-                        component="div"
-                        sx={{
-                          fontWeight: "800",
-                          display: "flex",
-                          justifyContent: "center",
-                        }}
-                      >
-                        Ching Chang Chong
-                      </Typography>
-                      <Typography
-                        gutterBottom
-                        variant="h6"
-                        component="div"
-                        sx={{
-                          color: "#28402e",
-                          display: "flex",
-                          justifyContent: "center",
-                          textTransform: "uppercase",
-                        }}
-                      >
-                        Frontend Developer
-                      </Typography>
-                      <Rating
-                        name="simple-controlled"
-                        value={value}
-                        onChange={(event, newValue) => {
-                          setValue(newValue);
-                        }}
-                        sx={{
-                          color: "#3a09ff",
-                          display: "flex",
-                          justifyContent: "center",
-                        }}
-                      />
-                      <Typography
-                        variant="body1"
-                        color="text.secondary"
-                        sx={{ fontSize: "16px", paddingTop: "10px" }}
-                      >
-                        I am a highly analytical front-end developer with
-                        expertise in HTML, CSS, JavaScript, and various
-                        front-end frameworks. I develop dynamic and responsive
-                        interfaces that meet client needs. With a deep
-                        understanding of front-end development best practices, I
-                        am an innovative developer experienced in React. I am an
-                        enthusiastic, self-motivated, reliable, responsible and
-                        hard working person. I am a mature team worker and
-                        adaptable to all challenging situations.
-                      </Typography>
-                    </CardContent>
-                  </Stack>
-                  <CardActions
-                    sx={{ display: "flex", justifyContent: "center" }}
+                    {isShowMore2 ? "Read Less" : "Read More"}
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
+      </header>
+      <header style={{ marginBlock: "3.8rem" }}>
+        <div className="page-header min-vh-80">
+          <Container>
+            <div className="row">
+              <div className="col-lg-6 my-3">
+                <h1 className="mb-4 fw-bold">Desired Experiences</h1>
+                <p className="lead mb-0">
+                  Careers in programming, such as software engineering, web
+                  development , data science, are gaining popularity as
+                  technology advances. we can use the read more/read Tech
+                  specialists often encounter questions in interviews assessing
+                  their programming experience for developers. This section
+                  introduces to hiring manager and summarises your skills and
+                  experience. Data your programming experience here may
+                  encourage employers.
+                </p>
+                {isShowMore3 && (
+                  <p className="lead mb-0">
+                    Tech specialists often encounter questions in interviews
+                    assessing their programming experience for the developers.
+                    This section introduces you to the hiring manager and
+                    summarises your skills and experience. Highlighting your
+                    programming experience here may encourage potential
+                    employers to read your entire CV.
+                  </p>
+                )}
+                <div
+                  style={{ marginTop: "1rem", display: "flex", gap: "1rem" }}
+                >
+                  <Button variant="contained" color="warning">
+                    Discover
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="success"
+                    onClick={toggleReadMoreLess3}
                   >
-                    <Button
-                      variant="contained"
-                      color="error"
-                      sx={{
-                        paddingBlock: "11px",
-                        paddingInline: "60px",
-                      }}
-                    >
-                      Follow
-                    </Button>
-                  </CardActions>
-                  <Box
-                    sx={{
-                      marginTop: "10px",
-                      display: "flex",
-                      justifyContent: "space-evenly",
-                      backgroundColor: "white",
-                      gap: "50px",
-                    }}
-                  >
-                    <Box columns={3}>
-                      <Typography>
-                        <h4>5896</h4>
-                      </Typography>
-                      <Typography>
-                        <h5>Posts</h5>
-                      </Typography>
-                    </Box>
-                    <Box columns={3}>
-                      <Typography>
-                        <h4>8952</h4>
-                      </Typography>
-                      <Typography>
-                        <h5>Likes</h5>
-                      </Typography>
-                    </Box>
-                    <Box columns={3}>
-                      <Typography>
-                        <h4>6545</h4>
-                      </Typography>
-                      <Typography>
-                        <h5>Followers</h5>
-                      </Typography>
-                    </Box>
-                  </Box>
-                </Box>
-              </Box>
-            </Grid>
-          </Grid>
-        </Box>
-      </Container>
+                    {isShowMore3 ? "Read Less" : "Read More"}
+                  </Button>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="row mt-3">
+                  <img
+                    className="w-100 d-flex justify-content-center"
+                    src={Header3}
+                    alt="flower-2"
+                    style={{ borderRadius: "2.5rem" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
+      </header>
     </>
   );
-}
+};
+
+export default Services;
