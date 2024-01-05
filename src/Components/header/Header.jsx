@@ -5,7 +5,7 @@ import { Stack } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { Button, CardActions } from "@mui/material";
-import CardPic from "../../Assets/Cardpic.avif";
+import CardPic from "../../Assets/Cardpic.jpeg";
 import Rating from "@mui/material/Rating";
 
 export default function Header() {
@@ -85,7 +85,7 @@ export default function Header() {
                           justifyContent: "center",
                         }}
                       >
-                        Ching Chang Chong
+                        Lalit Jakhar
                       </Typography>
                       <Typography
                         gutterBottom
